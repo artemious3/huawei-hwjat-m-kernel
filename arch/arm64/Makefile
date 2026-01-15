@@ -141,7 +141,7 @@ export MTK_PLATFORM MTK_PROJECT MTK_TARGET_PROJECT
 ifeq ($(CONFIG_LCD_KIT_DRIVER),y)
 -include $(srctree)/scripts/drvgen/lcdkit.mk
 endif
--include $(srctree)/scripts/drvgen/drvgen.mk
+# -include $(srctree)/scripts/drvgen/drvgen.mk
 ifeq ($(CONFIG_LCD_KIT_DRIVER),y)
 archprepare: $(DRVGEN_FILE_LIST)  
 else
